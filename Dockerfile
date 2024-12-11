@@ -1,4 +1,4 @@
-FROM nginx:latest
+FROM nginx:alpine
 
 # Copy the custom nginx.conf to the container's configuration directory
 COPY nginx.conf /etc/nginx/nginx.conf
@@ -7,7 +7,7 @@ COPY nginx.conf /etc/nginx/nginx.conf
 # Update "static_files" with your actual directory containing files
 COPY static_files/ /usr/share/nginx/html/
 
-# Expose port 80 to allow traffic
+# Expose port 80 for the server
 EXPOSE 80
 
 # Start Nginx
