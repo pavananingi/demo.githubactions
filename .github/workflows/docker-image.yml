@@ -5,7 +5,7 @@ on:
     branches:
       - main # Trigger workflow on push to the main branch
       - dev
-      - uat
+    
 
 jobs:
   build-and-push:
